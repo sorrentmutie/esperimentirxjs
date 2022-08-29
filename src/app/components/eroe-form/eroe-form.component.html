@@ -1,0 +1,31 @@
+<h1>eroe-form works!</h1>
+
+<form #formEroe="ngForm" (ngSubmit)="mySubmit()" >
+
+  <div class="form-group">
+    <label for="nome" class="form-label mt-4">Nome</label>
+    <input  #nome="ngModel"  [(ngModel)]="modello.nome"  required minlength="4" type="text" id="nome" name="nome" class="form-control" placeholder="Inserisci nome" >
+    <div [hidden]="nome.valid || nome.pristine" class="alert alert-danger">Il nome è obbligatorio</div>
+  </div>
+
+
+
+
+  <div class="form-group">
+    <label for="alterEgo" class="form-label mt-4">Alter Ego</label>
+    <input [(ngModel)]="modello.alterEgo" type="text" id="alterEgo" name="alterEgo" class="form-control" placeholder="Inserisci alter ego" >
+  </div>
+
+  <div class="form-group">
+    <label for="superPotere" class="form-label mt-4">Super Potere</label>
+    <select [(ngModel)]="modello.potere"  class="form-control" id="superPotere" name="superPotere">
+      <option value="-1">--- Seleziona Super Potere ---</option>
+      <option *ngFor="let potere of poteri" [value]="potere">{{potere}}</option>
+    </select>
+  </div>
+
+
+  <button [disabled]="formEroe.invalid" type="submit" class="btn btn-success mt-4">OK</button>
+  <button type="button" (click)="resetForm();formEroe.reset();" class="btn btn-danger mt-4 mx-1">Reset</button>
+
+</form>
