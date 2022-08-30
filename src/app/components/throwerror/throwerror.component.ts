@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { catchError, from, map, of, throwError, retry } from 'rxjs';
 import { onErrorResumeNext } from 'rxjs/operators';
+import { RandomUsersService } from 'src/app/services/random-users.service';
 
 @Component({
   selector: 'app-throwerror',
@@ -10,6 +11,8 @@ import { onErrorResumeNext } from 'rxjs/operators';
 export class ThrowerrorComponent  {
 
   // myobs = throwError(() => new Error("errore test"));
+
+  // myservice = inject(RandomUsersService);
 
   mysrc = from([1,2,'A',4]);
 

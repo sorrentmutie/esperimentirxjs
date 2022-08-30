@@ -10,6 +10,7 @@ import { EsperimentiComponent } from './components/esperimenti/esperimenti.compo
 import { EroeFormComponent } from './components/eroe-form/eroe-form.component';
 import { EroeFormReattivoComponent } from './components/eroe-form-reattivo/eroe-form-reattivo.component';
 import { ThrowerrorComponent } from './components/throwerror/throwerror.component';
+import { RandomUserComponent } from './components/random-user/random-user.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ThrowerrorComponent } from './components/throwerror/throwerror.componen
     EroeFormComponent,
     EroeFormReattivoComponent,
     ThrowerrorComponent,
+    RandomUserComponent,
   ],
   imports: [
     BrowserModule,
