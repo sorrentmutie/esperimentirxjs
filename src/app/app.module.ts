@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EsperimentiComponent } from './components/esperimenti/esperimenti.component';
 import { EroeFormComponent } from './components/eroe-form/eroe-form.component';
+import { EroeFormReattivoComponent } from './components/eroe-form-reattivo/eroe-form-reattivo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EsperimentiComponent,
     EroeFormComponent,
+    EroeFormReattivoComponent,
   ],
   imports: [
     BrowserModule,
