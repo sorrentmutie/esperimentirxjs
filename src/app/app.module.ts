@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { EsperimentiComponent } from './components/esperimenti/esperimenti.component';
 import { EroeFormComponent } from './components/eroe-form/eroe-form.component';
 import { EroeFormReattivoComponent } from './components/eroe-form-reattivo/eroe-form-reattivo.component';
+import { ThrowerrorComponent } from './components/throwerror/throwerror.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { EroeFormReattivoComponent } from './components/eroe-form-reattivo/eroe-
     EsperimentiComponent,
     EroeFormComponent,
     EroeFormReattivoComponent,
+    ThrowerrorComponent,
   ],
   imports: [
     BrowserModule,
