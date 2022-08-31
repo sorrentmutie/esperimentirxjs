@@ -1,0 +1,8 @@
+<p>my-subject-component works!</p>
+<button class="btn btn-info" (click)="iniziaEmissione()">Inizia emissione</button>
+<button class="btn btn-info" (click)="fermaEmissione()">Ferma emissione</button>
+<ul>
+  <li *ngFor ="let customer of customers">
+    {{customer.name}} : {{customer.city}}
+  </li>
+</ul>

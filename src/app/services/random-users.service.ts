@@ -11,7 +11,7 @@ export class RandomUsersService {
    http = inject(HttpClient);
 
    getRandomUser(): Observable<RandomUserResponse> {
-    return this.http.get<RandomUserResponse>("https://randomuser.me/api");
+    return this.http.get<RandomUserResponse>("https://randomuser.me/api/?results=50");
    }
 
 

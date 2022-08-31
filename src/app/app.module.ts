@@ -14,6 +14,8 @@ import { RandomUserComponent } from './components/random-user/random-user.compon
 import { FirstInterceptor } from './interceptors/first.interceptor';
 import { SecondInterceptor } from './interceptors/second.interceptor';
 import { LoaderComponent } from './components/loader/loader.component';
+import { MySubjectComponentComponent } from './components/my-subject-component/my-subject-component.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { LoaderComponent } from './components/loader/loader.component';
     ThrowerrorComponent,
     RandomUserComponent,
     LoaderComponent,
+    MySubjectComponentComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,

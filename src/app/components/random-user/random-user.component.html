@@ -1,1 +1,8 @@
-<p>random-user works!</p>
+
+<div *ngFor="let user of users" class="card text-white bg-success mb-3" style="max-width: 20rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h4 class="card-title">{{user.name.first}} {{user.name.last}}</h4>
+    <img src="{{user.picture.large}}">
+  </div>
+</div>
